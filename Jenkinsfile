@@ -4,7 +4,7 @@ pipeline{
         stage("Test"){
             steps{
                 sh """
-                        echo "Welcome to Jenkins Seun"
+                        echo "Welcome to Jenkins Seun && Chris"
                    """
             }
         }
