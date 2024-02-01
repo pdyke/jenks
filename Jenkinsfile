@@ -4,7 +4,7 @@ pipeline{
         stage("Test"){
             steps{
                 sh """
-                        echo "Welcome to Jenkins Ebuka"
+                        echo "Welcome to Jenkins Seun"
                    """
             }
         }
@@ -13,7 +13,7 @@ pipeline{
             steps{
                 sh """
                         echo "Welcome to the Deployment. Added Jenkins"
-                        ssh -o StrictHostKeyChecking=no -T -i /var/lib/jenkins/tester2.pem ubuntu@ec2-54-242-151-111.compute-1.amazonaws.com
+                        ssh -o StrictHostKeyChecking=no -T -i /var/lib/jenkins/all_computers.pem ec2-16-171-162-26.eu-north-1.compute.amazonaws.com
                         sudo apt update -y
                         cd /var/www
                         sudo rm -rf html
