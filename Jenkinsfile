@@ -17,7 +17,7 @@ pipeline{
                         sudo apt update -y
                         cd /var/www
                         sudo rm -rf html
-                        git clone https://github.com/monyslim/jenk.git html
+                        git clone https://github.com/pdyke/jenks.git html
                    """
             }
         }
